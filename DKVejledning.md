@@ -57,7 +57,6 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Vis tælle-variablen
 Find blokken `||basic.vis nummer||`. Indsæt variablen `||variables:antalRyst||` i `||basic.vis nummer||`
-* ** Tip til bloksamling: ** Tryk på den lilla pære 
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -84,7 +83,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ## Nulstil multi:tælleren
-* Find blokken `||basic.vis nummer||`. Sæt den ind i `||basic.vis nummer||`
+* Find blokken `||basic.vis nummer||`. Sæt den ind i `||input:når der trykkes på knap A||` under `||variables: sæt||`
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -105,6 +104,39 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
+## Vis antal ryst
+* Indsæt blokken  `||loops:every||`
+
+```blocks
+loops.everyInterval(500, function () {
+    
+})
+```
+
+## Vis antal ryst
+* Indstil til `||loops:every||` 2000 milisekunder (=2 sekunder)
+
+```blocks
+loops.everyInterval(2000, function () {
+
+})
+```
+
+## Vis antal ryst
+* Indsæt  `||basic.vis nummer||` i `||loops:every||` 
+```blocks
+loops.everyInterval(2000, function () {
+    basic.showNumber()
+})
+```
+
+## Vis antal ryst
+* Sæt variablen `||variables:antalRyst||` ind i `||basic.vis nummer||`
+```blocks
+loops.everyInterval(2000, function () {
+    basic.showNumber(antalRyst)
+})
+```
 
 ## Koden er nu klar til brug!
 * Fortsæt med opgaverne i elevarket 
