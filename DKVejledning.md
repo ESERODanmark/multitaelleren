@@ -55,16 +55,6 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-## Vis tælle-variablen
-Find blokken `||basic.vis nummer||`. Indsæt variablen `||variables:antalRyst||` i `||basic.vis nummer||`
-
-```blocks
-input.onGesture(Gesture.Shake, function () {
-    antalRyst = antalRyst + 1
-    basic.showNumber(antalRyst)
-})
-```
-
 ## Nulstil multi:tælleren
 * Find blokken `||input:når der trykkes på knap A||`. 
 
